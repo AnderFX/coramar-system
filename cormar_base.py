@@ -4,9 +4,9 @@ import mysql.connector
 
 def conectar() :
     mydb = mysql.connector.connect(
-        host="localhost",
-        user="root",
-        passwd="Mateocool1313",
+        host="174.129.53.240",
+        user="coramar_bd",
+        passwd="Adminroot12*",
         database="coramar",
         port = "3306")
     return mydb
@@ -69,3 +69,5 @@ def ingresar_cliente():
         print("¡Cliente ingresado con éxito!")
     except mysql.connector.Error as err:
         print(f"Error al insertar cliente: {err}")
+
+print(conectar())
